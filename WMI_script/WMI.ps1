@@ -1,9 +1,9 @@
 while ($true)
 {
-    $a=Get-WmiObject -Class Sensor -Namespace "root\OpenHardwareMonitor" -filter "Name LIKE 'CPU Core%' and SensorType='Temperature'" | Sort-Object -Property @{Expression = "Name"; Descending = $False}
+    $a=Get-WmiObject -Class Sensor -Namespace "root\OpenHardwareMonitor" -filter "Name LIKE 'CPU Core' and SensorType='Temperature'" | Sort-Object -Property @{Expression = "Name"; Descending = $False}
     $port= new-Object System.IO.Ports.SerialPort COM1,9600,None,8,one
     $port.open()
-    $port.Write($a[0].Value.ToString('f0'))
+    $port.Write($a.Value.ToString('f0'))
     $port.Close()
     #Echo $a[0].Value.ToString('f1')
     #foreach ($obj in $a) {
