@@ -5,11 +5,11 @@ while ($true)
     $port.open()
     $port.Write($a[0].Value.ToString('f0'))
     $port.Close()
-    Echo $a[0].Value.ToString('f1')
-    foreach ($obj in $a) {
-        Echo $obj.Name
-        Echo $obj.Value
-        }
+    #Echo $a[0].Value.ToString('f1')
+    #foreach ($obj in $a) {
+    #    Echo $obj.Name
+    #    Echo $obj.Value
+    #    }
     Start-Sleep -Milliseconds 2000
 }
     # Refister-Scheduled job
