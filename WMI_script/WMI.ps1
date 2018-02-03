@@ -19,13 +19,16 @@ while ($true)
     #BAD ATTEMPTS
 
 
+    
+    #'hidden' target : %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -WindowStyle Hidden -file "C:\Users\Denis\Desktop\WMI_script\WMI.ps1"
+
     #RESULT
     # 1. Install OpenHardwareMonitor
     # 2. Run at startup (in settings)
     # 3. Run > %AppData%
     # 4. go to C:\Users\<YOURUSERNAME>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
     # 5. Add "hidden" shortcut there
-    # 6. Reboot
+    # 6. Reboot 
 
 
 
